@@ -31,9 +31,13 @@ Instrucciones acerca de cómo descargar y compilar ROOT (y pyROOT) pueden encont
 
 - Descargar la última versión de ROOT seleccionando el sistema operativo que están utilizando (https://root.cern/releases/release-62406/). Asegúrense de descargar el archivo en la carpeta `/home/<usuario>/` donde `<usuario>` es el nombre de usuario que tiene en Linux. El archivo descargado está en formato `TAR.GZ` así que para descomprimirlo deben correr el siguiente comando:
 
-> tar -xzvf ~/root*.tar.gz ~/root
+> tar -xzvf ~/root*.tar.gz 
 
-Si este comando no funciona es probable que tengan el archivo descargado en otro directorio.
+Si este comando no funciona es probable que tengan el archivo descargado en otro directorio. Chequeen que hay un directorio llamado `root` en `home` de la siguiente manera:
+
+> ls ~/root
+
+Si les dice "No such file or directory" algo salió mal.
 
 - Crear un directorio de compilación (`rootbuild`) y otro de instalación (`rootinstall`). Luego muévanse al escritorio de compilación:
 
