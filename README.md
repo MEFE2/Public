@@ -33,11 +33,15 @@ Instrucciones acerca de cómo descargar y compilar ROOT (y pyROOT) pueden encont
 
 > tar -xzvf ~/root*.tar.gz 
 
-Si este comando no funciona es probable que tengan el archivo descargado en otro directorio. Chequeen que hay un directorio llamado `root` en `home` de la siguiente manera:
+Si este comando no funciona es probable que tengan el archivo descargado en otro directorio. Luego de descomprimir el `TAR.GZ`, cambien el nombre de la carpeta donde descomprimo a `root` usando el comando `mv`
+
+> mv root-* root
+
+Chequeen que hay un directorio llamado `root` en `home` de la siguiente manera:
 
 > ls ~/root
 
-Si les dice "No such file or directory" algo salió mal.
+Si les dice "No such file or directory" algo salió mal. Sigamos:
 
 - Crear un directorio de compilación (`rootbuild`) y otro de instalación (`rootinstall`). Luego muévanse al escritorio de compilación:
 
