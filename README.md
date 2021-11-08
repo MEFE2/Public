@@ -29,7 +29,7 @@ Compilar desde la fuente es un proceso algo tedioso pero robusto de instalar ROO
 
 Instrucciones acerca de cómo descargar y compilar ROOT (y pyROOT) pueden encontrarse en https://root.cern/install/build_from_source/ pero algunas instrucciones específicas están disponibles aquí:
 
-- Descargar la última versión de ROOT seleccionando el sistema operativo que están utilizando (https://root.cern/releases/release-62406/). Asegúrense de descargar el archivo en la carpeta `/home/<usuario>/` donde `<usuario>` es el nombre de usuario que tiene en Linux. El archivo descargado está en formato `TAR.GZ` así que para descomprimirlo deben correr el siguiente comando:
+- Descargar la última versión de ROOT seleccionando la opción "source distribution" en https://root.cern/releases/release-62406/ (o clickeando el siguiente link: https://root.cern/download/root_v6.24.06.source.tar.gz). Asegúrense de descargar el archivo en la carpeta `/home/<usuario>/` donde `<usuario>` es el nombre de usuario que tiene en Linux. El archivo descargado está en formato `TAR.GZ` así que para descomprimirlo deben correr el siguiente comando:
 
 > tar -xzvf ~/root*.tar.gz 
 
