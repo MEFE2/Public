@@ -18,6 +18,7 @@ pyROOT es ROOT en Python. Esto nos dará la ventaja de un debugging muy rápido 
 Primero, chequeemos que tenemos todo lo necesario para poder instalar ROOT. Muchas dependencias son necesarias para correr ROOT (pueden chequearlas en https://root.cern/install/dependencies/). Para instalarlas, abran una terminal y corran los siguientes comandos:
 
 > sudo apt-get update
+> 
 > sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev git tar
 
 Un mensaje aparecerá en sus terminales preguntando por su contraseña de Ubuntu. Tipeenla, toquen Enter y sigas las instrucciones.
@@ -53,13 +54,13 @@ Si les dice "No such file or directory" algo salió mal. Sigamos:
 > cd ~/rootbuild
 
 - Ejecutar el comando `cmake` en la terminal de la siguiente manera:
-- 
+-  
 > cmake -DCMAKE_INSTALL_PREFIX=~/rootinstall ~/root
   
 - Queremos compilar pyROOT con Python3. El comando `cmake -DCMAKE_INSTALL_PREFIX=~/rootinstall ~/root` ejecutado en la terminal debería darles un mensaje largo en la misma terminal. Busquen en ese mensaje una línea que lea "PyROOT will be built for versions 3.something" o "PyROOT will be built for versions 3.something (Main) and 2.something" en el caso que tengan tanto python2 como 3 instalados en su computadora.
 - Si ninguna versión de python3 es encontrada, o bien no tienen Python instalado o ROOT no lo está encontrando. Para solucionarlo, ejecuten el comando `which python3` en la terminal. Un mensaje corto aparecerá con una dirección. Llamemos a esta dirección &lt;python3_dir&gt; y corramos nuevamente el comando `cmake` de la siguiente manera:
 
-> cmake -DCMAKE_INSTALL_PREFIX=~/rootinstall -DPython3_EXECUTABLE=&lt;python3_dir&gt; ~/root
+  > cmake -DCMAKE_INSTALL_PREFIX=~/rootinstall -DPython3_EXECUTABLE=&lt;python3_dir&gt; ~/root
  
  Importante: donde dice `<python3_dir>` deben escribir la dirección que el comando `which python3` les devolvió.
  
