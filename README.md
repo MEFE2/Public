@@ -15,8 +15,9 @@ pyROOT es ROOT en Python. Esto nos dará la ventaja de un debugging muy rápido 
 
 ## Pre-requisitos
 
-Primero, chequeemos que tenemos todo lo necesario para poder instalar ROOT. Muchas dependencias son necesarias para correr ROOT (pueden chequearlas en https://root.cern/install/dependencies/). Para instalarlas, abran una terminal y corran el siguiente comando:
+Primero, chequeemos que tenemos todo lo necesario para poder instalar ROOT. Muchas dependencias son necesarias para correr ROOT (pueden chequearlas en https://root.cern/install/dependencies/). Para instalarlas, abran una terminal y corran los siguientes comandos:
 
+> sudo apt-get update
 > sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev python libssl-dev git tar
 
 Un mensaje aparecerá en sus terminales preguntando por su contraseña de Ubuntu. Tipeenla, toquen Enter y sigas las instrucciones.
