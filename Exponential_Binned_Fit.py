@@ -5,7 +5,7 @@ import os,sys,time
 import pickle
 import ROOT
 import array
-from ROOT import *
+from ROOT import gStyle,TRandom3, TH1D, TF1, kRed, kBlue, kGreen
 from decimal import *
 # getcontext().prec=4
 
